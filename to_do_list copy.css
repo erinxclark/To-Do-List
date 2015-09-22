@@ -1,0 +1,42 @@
+#show-item {
+  display: none;
+}
+
+.complete {
+  display: none;
+}
+
+.toDoItem {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.toDoItem:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+
+}
+
+#new-invitation {
+  display: none;
+}
+
+#new-notes {
+  display: none;
+}
+
+#notes-label {
+  display: none;
+}
+
+#inv-label {
+  display: none;
+}
+
+.plus {
+  font-size: 18;
+  font-weight: bold;
+}

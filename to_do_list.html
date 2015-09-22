@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/to_do_list.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/to_do_list.js"></script>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do List
+      </h1>
+
+      <div class="row">
+
+          <h2>Add a list item:</h2>
+      </div>
+
+        <div class="row">
+          <div class="col-md-6">
+          <form id="new-list">
+
+            <div class="form-group">
+              <label for="new-item">Item</label>
+              <input type="text" class="form-control" id="new-item" required>
+            </div>
+
+            <div class="form-group">
+              <label for="new-place">Location</label>
+              <input type="text" class="form-control" id="new-place" required>
+            </div>
+
+            <div class="form-group">
+              <label for="new-time">Time</label>
+              <input type="text" class="form-control" id="new-time">
+            </div>
+            <button type="submit" class="btn">Add</button>
+
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form id="notes">
+            <button type="button" id="notesBtn"><span class="plus"> + </span>Notes</button>
+            <div class="form-group">
+              <label for="new-notes" id="notes-label">Notes</label>
+              <input type="text" class="form-control" id="new-notes">
+            </div>
+
+          </form>
+
+          <form id="invite">
+            <button type="button" id="invites"><span class="plus"> + </span>Invite Friends</button>
+
+            <div class="form-group">
+              <label for="new-invitation" id= "inv-label">Invite Friends</label>
+              <input type="text" class="form-control" id="new-invitation">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>To Do List:</h2>
+          <ul id="to-do">
+
+          </ul>
+
+      </div>
+
+      <div class="col-md-6">
+        <div id="show-item">
+          <h2></h2>
+
+          <p>To-do: <span class="item"></span></p>
+          <p>Where: <span class="place"></span></p>
+          <p>When: <span class="time"></span></p>
+          <p>Notes: <span class="notes"></span></p>
+          <p>People Invited: <span class="invite"></span></p>
+          <p class="complete">COMPLETE</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </body>
+</html>
